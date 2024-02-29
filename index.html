@@ -643,7 +643,7 @@
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129863/project-food/papa-con-sabor-a-mar.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Mayonesa de aguacate</a><span><a data-toggle="modal" data-target="#myModal" href="#receta1" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a href="#">Mayonesa de aguacate</a><span><a onclick="mostrarSweetAlertNo()"  class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -656,7 +656,7 @@
           <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129826/project-food/pavo-relleno.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Vinagreta de mostaza</a><span><a data-toggle="modal" data-target="#modalPavo" href="#receta1" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a href="#">Vinagreta de mostaza</a><span><a   onclick="mostrarSweetAlertNo()"class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -669,7 +669,7 @@
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129851/project-food/queso-de-coco.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Salsa de mar y vida</a><span><a data-toggle="modal" data-target="#modalPostre" href="#receta1" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a >Salsa de mar y vida</a><span><a onclick="mostrarSweetAlertNo()" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -679,7 +679,17 @@
             </div>
           </div>
 
-         
+          <script>
+            function mostrarSweetAlertNo() {
+              Swal.fire({
+                title: 'Error',
+                text: 'Ha fallado el servidor; código 4000 ',
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+              });
+            }
+          </script>
+
 
           
 
@@ -1142,7 +1152,7 @@
             </script>
 
             <div class="col-lg-6 menu-item filter-starters">
-              <img src="https://i.pinimg.com/236x/56/53/dc/5653dcf1396de4fe8fa045424bee38be.jpg" class="menu-img" alt="">
+              <img src="https://s1.eestatic.com/2021/08/31/ciencia/nutricion/608451892_203957115_1706x960.jpg" class="menu-img" alt="">
               <div class="menu-content">
                 <a href="#">Sal</a><span><a onclick="mostrarSweetAlert24()" class="btn animated fadeInUp scrollto">Etimología</a></span>
               </div>
@@ -1160,7 +1170,7 @@
             </script>
 
             <div class="col-lg-6 menu-item filter-starters">
-              <img src="https://i.pinimg.com/236x/56/53/dc/5653dcf1396de4fe8fa045424bee38be.jpg" class="menu-img" alt="">
+              <img src="https://www.atilanoanllo.com/productos-gallegos/wp-content/uploads/2021/09/Tocino-Atilano-Anllo-1080x675-1-1080x675.jpg" class="menu-img" alt="">
               <div class="menu-content">
                 <a href="#">Tocino</a><span><a onclick="mostrarSweetAlert25()" class="btn animated fadeInUp scrollto">Etimología</a></span>
               </div>
