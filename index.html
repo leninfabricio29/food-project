@@ -643,7 +643,7 @@
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129863/project-food/papa-con-sabor-a-mar.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Mayonesa de aguacate</a><span><a onclick="mostrarSweetAlertNo()"  class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a href="#">Mayonesa de aguacate</a><span><a data-toggle="modal" data-target="#modalSalsaAguacate"  class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -656,7 +656,7 @@
           <div class="col-lg-6 menu-item filter-specialty">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129826/project-food/pavo-relleno.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Vinagreta de mostaza</a><span><a   onclick="mostrarSweetAlertNo()"class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a href="#">Vinagreta de mostaza</a><span><a  data-toggle="modal" data-target="#modalSalsaVinagreta" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -669,7 +669,7 @@
           <div class="col-lg-6 menu-item filter-starters">
             <img src="https://res.cloudinary.com/dlhh5olhn/image/upload/v1709129851/project-food/queso-de-coco.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a >Salsa de mar y vida</a><span><a onclick="mostrarSweetAlertNo()" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
+              <a >Salsa de mar y vida</a><span><a data-toggle="modal" data-target="#modalVida" class="btn  animated fadeInUp scrollto">Ver receta</a></span>
             </div>
             <div class="menu-ingredients">
               <ul>
@@ -679,19 +679,314 @@
             </div>
           </div>
 
-          <script>
-            function mostrarSweetAlertNo() {
-              Swal.fire({
-                title: 'Error',
-                text: 'Ha fallado el servidor; código 4000 ',
-                icon: 'error',
-                confirmButtonText: 'Aceptar'
-              });
-            }
-          </script>
 
 
+<div class="modal fade " id="modalSalsaAguacate" >
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content modal-receta">
+    
+      <!-- Encabezado del Modal -->
+      <div class="modal-header  border-none modal-receta">
+        <h4 class="modal-title ">Mayonesa de aguacate </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Cuerpo del Modal -->
+      <div class="modal-body modal-receta ">
+        <!-- Aquí va el contenido de las pestañas -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active ala" data-toggle="tab" href="#tab-salsa1">Ingredientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-salsa2">Primer paso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-salsa3">Tercer paso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tab-salsa4">Cuarto paso</a>
+        </ul>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content mt-2 text-light " >
+          <div id="tab-salsa1" class="tab-pane fade show active">
+            <div class="menu-ingredients">
+
+              <ul>
+                <li>50 g de aguacate (medio aguacate)</li>
+                <li>1 ramita de culantro</li>
+<li>1 huevo</li>
+<li>1 limón</li>
+<li>37 g de yogurt griego (4 o 5 cucharadas soperas)</li>
+
+              </ul>
+            </div>
+           
+          </div>
+          <div id="tab-salsa2" class="tab-pane fade">
+            <div class="menu-ingredients">
+              <ul>
+                <p>Para elaborar la mayonesa de aguacate, inicialmente dispondremos de la ayuda de una licuadora, donde verteremos un huevo, una pizca de sal y 4 o 5 cucharadas de yogurt griego.</p>
+                                </ul>
+            </div>
+          </div>
+          <div id="tab-salsa3" class="tab-pane fade">
+            <div class="menu-ingredients">
+              
+              <ul>
+               <p>Después, cuando la mayonesa vaya adquiriendo espesor, lavamos una ramita de culantro y la añadimos a la licuadora junto con la mayonesa.</p>
+              </ul>
+            </div>
+          </div>
+          <div id="tab-salsa4" class="tab-pane fade">
+            <div class="menu-ingredients">
+              <ul>
+                <p>3. Finalmente, para darle mayor espesor a la mayonesa, le agregamos la mitad de un aguacate y servimos la mayonesa en un recipiente para acompañar las papas con sabor a mar.</p>
+                                  </ul>
+            </div>
+          </div>
           
+    
+
+       </div>
+      </div>
+      
+      <!-- Pie del Modal -->
+      <div class="modal-footer modal-receta">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+
+
+      <div class="modal fade " id="modalSalsaVinagreta" >
+        <div class="modal-dialog modal-lg ">
+          <div class="modal-content modal-receta">
+          
+            <!-- Encabezado del Modal -->
+            <div class="modal-header  border-none modal-receta">
+              <h4 class="modal-title ">Vinagreta de mostaza </h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Cuerpo del Modal -->
+            <div class="modal-body modal-receta ">
+              <!-- Aquí va el contenido de las pestañas -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active ala" data-toggle="tab" href="#tab-vina1">Ingredientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-vina2">Primer paso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-vina3">Tercer paso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-vina4">Cuarto paso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-vina5">Quinto paso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tab-vina6">Sexto paso</a>
+                </li>
+              </ul>
+      
+              <!-- Contenido de las pestañas -->
+              <div class="tab-content mt-2 text-light " >
+                <div id="tab-vina1" class="tab-pane fade show active">
+                  <div class="menu-ingredients">
+                    <ul>
+                      <li>Mostaza</li>
+                      <li>aceite de oliva</li>
+      <li>miel</li>
+      <li>sal</li>
+      <li>pimienta</li>
+      
+                    </ul>
+                  </div>
+                 
+                </div>
+                <div id="tab-vina2" class="tab-pane fade">
+                  <div class="menu-ingredients">
+                    <ul>
+                      <p>En un bol pequeño, coloca 200 gramos de mostaza.</p>
+                                      </ul>
+                  </div>
+                </div>
+                <div id="tab-vina3" class="tab-pane fade">
+                  <div class="menu-ingredients">
+                    
+                    <ul>
+                     <p>Añade cuatro cucharadas de aceite de oliva.</p>
+                    </ul>
+                  </div>
+                </div>
+                <div id="tab-vina4" class="tab-pane fade">
+                  <div class="menu-ingredients">
+                    <ul>
+                      <p>Incorpora dos cucharadas de miel.</p>
+                                        </ul>
+                  </div>
+                </div>
+                
+                <div id="tab-vina5" class="tab-pane fade">
+                  <div class="menu-ingredients">
+                    <ul>
+                      <p>Agrega sal al gusto.</p>
+                                        </ul>
+                  </div>
+                </div>
+
+                <div id="tab-vina6" class="tab-pane fade">
+                  <div class="menu-ingredients">
+                    <ul>
+                      <p>Si lo deseas, también puedes añadir pimienta para darle un toque adicional de gusto.</p>
+                                        </ul>
+                  </div>
+                </div>
+      
+             </div>
+            </div>
+            
+            <!-- Pie del Modal -->
+            <div class="modal-footer modal-receta">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+      
+            </div>
+            </div>
+            </div>
+
+            <div class="modal fade " id="modalVida" >
+              <div class="modal-dialog modal-lg ">
+                <div class="modal-content modal-receta">
+                
+                  <!-- Encabezado del Modal -->
+                  <div class="modal-header  border-none modal-receta">
+                    <h4 class="modal-title ">Vinagreta de mostaza </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Cuerpo del Modal -->
+                  <div class="modal-body modal-receta ">
+                    <!-- Aquí va el contenido de las pestañas -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active ala" data-toggle="tab" href="#tab-vida1">Ingredientes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida2">Primer paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida3">Tercer paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida4">Cuarto paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida5">Quinto paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida6">Sexto paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida7">Séptimo paso</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-vida8">Octavo paso</a>
+                      </li>
+                    </ul>
+            
+                    <!-- Contenido de las pestañas -->
+                    <div class="tab-content mt-2 text-light " >
+                      <div id="tab-vida1" class="tab-pane fade show active">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <li>100 g de camarón</li>
+                            <li>200 g de maracuyá (6 unidadades)</li>
+                            <li>2 dientes de ajo</li>
+                            <li>1 cuchara de orégano</li>
+                            <li>1 cuchara de tomillo</li>
+                            <li>1 ramita de canela</li>
+                            <li>1 ramita de romero</li>
+                            <li>miel</li>
+                            <li>sal al gusto</li>
+                            
+                          </ul>
+                        </div>
+                       
+                      </div>
+                      <div id="tab-vida2" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>En una licuadora coloca la pulpa del maracuyá, colócale media taza de agua y licúa. Luego, pasa esto por un colador para quitar el restante de las semillas.</p>
+                                            </ul>
+                        </div>
+                      </div>
+                      <div id="tab-vida3" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          
+                          <ul>
+                           <p>Lleva el jugo del maracuyá a una olla y cocina a fuego lento.</p>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="tab-vida4" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>Agrega un poco de ajo machacado y sal, esto según tu gusto. Agrega también un poco de miel para darle un sabor agridulce a nuestra salsa, Revuelve constantemente, ¡no dejes de hacerlo!</p>
+                                              </ul>
+                        </div>
+                      </div>
+                      
+                      <div id="tab-vida5" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>Cuando la salsa haya espesado, agrega una ramita de romero, tomillo y canela, esto le dará un mejor sabor.</p>
+                                              </ul>
+                        </div>
+                      </div>
+      
+                      <div id="tab-vida6" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>5. Coloca los camarones en la salsa y deja que se cocinen por aproximadamente 4 a 5 minutos.
+                              Alerta: El camarón solo debe cocinarse por poco tiempo, de lo contrario, este se volverá cauchoso. Si eres principiante en la cocina, te recomendamos estar muy atento al tiempo.</p>
+                                              </ul>
+                        </div>
+                      </div>
+            
+                      <div id="tab-vida7" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>Una vez haya pasado el tiempo, retira los camarones y resérvalos. Retira también el romero, tomillo y canela.</p>
+                                              </ul>
+                        </div>
+                      </div>
+                      <div id="tab-vida8" class="tab-pane fade">
+                        <div class="menu-ingredients">
+                          <ul>
+                            <p>La salsa debería estar lista cuando haya espesado un poco. Para saber si está lista, deberás observar que la salsa hace burbujas mientras está en cocción. Una vez que esto suceda, apaga el fuego, pues has terminado y ahora solo queda el último paso, emplatar.</p>
+                                              </ul>
+                        </div>
+                      </div>
+                   </div>
+                  </div>
+                  
+                  <!-- Pie del Modal -->
+                  <div class="modal-footer modal-receta">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                  </div>
+            
+                  </div>
+                  </div>
+                  </div>
 
           
 
